@@ -150,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function checkForMatch() {
         const isMatch = firstCard.dataset.emoji === secondCard.dataset.emoji;
-
         if (isMatch) {
             disableCards();
             pairsFound++;
@@ -159,9 +158,11 @@ document.addEventListener("DOMContentLoaded", function () {
             if (pairsFound === emojis.length) {
                 clearInterval(timer);
                 setTimeout(() => {
-                    alert(
-                        `Tebrikler! Oyunu ${moves} hamlede ve ${seconds} saniyede tamamladınız!`
-                    );
+                    Swal.fire({
+                        title: "Tebrikler",
+                        text: `Tebrikler! Oyunu ${moves} hamlede ve ${seconds} saniyede tamamladınız!`,
+                        icon: "success",
+                    });
                 }, 500);
             }
         } else {
