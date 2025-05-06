@@ -1,2 +1,2 @@
 # Mom's Day
-Mother's Day Celebration Project | Easily Customizable with Parameters
+Mother's Day Celebration Project | Customizable with Parameter
