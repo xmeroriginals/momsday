@@ -1,0 +1,139 @@
+:root {
+  --blush-pink: #f8e1e4;
+  --lavender: #e6e6fa;
+  --cream: #fffaf0;
+  --soft-pink: #ffb6c1;
+  --dark-pink: #d87093;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--cream);
+  color: #555;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: var(--soft-pink);
+  color: white;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-pink);
+  transform: translateY(-2px);
+}
+
+#cardPreview {
+  min-height: 300px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#cardCanvas {
+  display: none;
+}
+
+.swal2-popup {
+  border-radius: 25px !important;
+  background-color: var(--cream) !important;
+}
+
+.swal2-confirm {
+  background-color: var(--soft-pink) !important;
+  border-radius: 15px !important;
+  border: none !important;
+}
+
+.swal2-confirm:hover {
+  background-color: var(--dark-pink) !important;
+}
+
+.preview-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: transparent;
+}
+
+.card-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: var(--soft-pink);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: var(--dark-pink);
+  transform: translateY(-2px);
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: -150px;
+}
+
+#previewTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  position: relative;
+  top: -10px;
+}
+
+.adjust-for-canvas #previewTitle {
+  position: relative;
+  top: -10px;
+  margin-bottom: 11px;
+}
+
+#previewMessage {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.1rem;
+  line-height: 1.8;
+}
+
+#previewChildName {
+  font-family: "Poppins", sans-serif;
+  font-weight: auto;
+  text-align: right;
+  font-style: italic;
+  font-size: 1rem;
+  transform: translateX(25px);
+}
+
+#cardPreview:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
